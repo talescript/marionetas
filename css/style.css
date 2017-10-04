@@ -1,0 +1,167 @@
+@charset 'utf-8';
+/***************************
+****************************
+Reset Styles
+****************************
+***************************/
+@import 'normalize.css';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+/***************************
+****************************
+Base Styles
+****************************
+***************************/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+a {
+    color: #8dc63f;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/**
+ * Typography
+ */
+:root {
+    font-size: calc(18px + 0.8vw);
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+    border-style: none;
+}
+
+/* Responsive images */
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+
+/***************************
+****************************
+Layout Styles
+****************************
+***************************/
+.container {
+    max-width: 38em;
+    margin: 0 auto;
+}
+
+@media (min-width: 48em) {
+    .pull-right-sm {
+        float: right;
+    }
+}
+
+/***************************
+****************************
+Module Styles
+****************************
+***************************/
+
+
+/**
+ * Background image / Paralax
+ */
+.hero-overlay {
+    background: rgba(43, 44, 43, 0.4);
+    padding: 1em;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.hero-img {
+    background-image: url('../assets/sagar.jpg');
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 48em) { 
+    .hero-img {
+        background-image: url('../assets/sagar-none.jpg');
+    }
+}
+
+
+/***************************
+****************************
+Theme Styles
+****************************
+***************************/
+
+/*Color List:
+- light blue = 00AEEF;
+- dark blue = 1C75BC
+- green = 8DC63F
+- dark green = 009444
+- orange = F7941E
+- dark orange = F15A29
+- brown = 594a42; */
+
+.background-primary {
+    background: #f7941e;
+}
+
+.background-secondary {
+    background: #00aeef;
+}
+
+.background-tertiary {
+    background: #8dc63f;
+}
+
+.background-quaternary {
+    background: #594a42;
+    color: #fff;
+}

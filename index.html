@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Marionetas Encantadas</h1>
+    </header>
+    <main>
+        <div class="parallax hero-img">
+            <section>
+                <div class="container hero-overlay">
+                    <p>Marionetas Encantadas, es un colectivo artístico, enfocado en crear mundos escénicos con diversas técnicas
+                        ( marionetas de hilo, manipulación directa, teatro de sombra, danza, música) para re-crear, re-pensar
+                        y aprender nuestro mundo.</p>
+                </div>
+            </section>
+            <section>
+                <div class="container hero-overlay">
+                    <p>Y desde el Chi kung, incorporamos técnicas para descubrir nuevos motores de movimiento, enfocado a bailarines,
+                        marionetistas, titiriteros y actores en general.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script>
+        // Change backgroundAttachment to SCROLL on IOS
+        function iOS() {
+            var iDevices = [
+                // If the issue happen in other devices,
+                // add to list.
+                'iPhone Simulator',
+                'iPhone'
+            ];
+
+            var parallax = document.querySelector(".parallax");
+            if (!!navigator.platform) {
+                while (iDevices.length) {
+                    if (navigator.platform == iDevices.pop()) {
+                        parallax.style.backgroundAttachment = "scroll";
+
+                    }
+                    console.log("I've only noticed the issue on iOS. Works on Android");
+                }
+            }
+        }
+
+        iOS();
+    </script>
+</body>
+
+</html>
