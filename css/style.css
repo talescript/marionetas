@@ -40,8 +40,6 @@ body {
     line-height: 1.4;
 }
 
-
-
 h1, h2, h3 {
     font-weight: bold;
 }
@@ -92,6 +90,7 @@ Layout Styles
 .container {
     max-width: 38em;
     margin: 0 auto;
+    padding: 1em;
 }
 
 @media (max-width: 48em) {
@@ -119,6 +118,66 @@ Layout Styles
 Module Styles
 ****************************
 ***************************/
+/**
+ * Background image / Paralax
+ */
+
+
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.hero-img {
+    background-image: url('../assets/sagar.jpg');
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 48em) { 
+    .hero-img {
+        background-image: url('../assets/sagar-none.jpg');
+    }
+}
+
+
+/***************************
+****************************
+Theme Styles
+****************************
+***************************/
+
+/*Color List:
+- light blue = 00AEEF;
+- dark blue = 1C75BC
+- green = 8DC63F
+- dark green = 009444
+- orange = F7941E
+- dark orange = F15A29
+- brown = 594a42; */
+
+.background-primary {
+    background: #A46C5B;
+    color: #fff;
+}
+
+.background-secondary {
+    background: #2C3B57;
+    color: #fff;
+}
+
+.background-tertiary {
+    background: #D29065;
+    color: #fff;
+}
+
+.background-quaternary {
+    background: #a56cc1;
+}
+
 .button,
 button,
 input[type="submit"],
@@ -252,7 +311,6 @@ blockquote,
 dl,
 figure,
 table,
-p,
 ul,
 ol,
 form {
@@ -263,72 +321,3 @@ form {
         margin-bottom: 1em;
     }
 }
-/**
- * Background image / Paralax
- */
-.hero-overlay {
-    background: rgba(43, 44, 43, 0.4);
-    padding: 1em;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: 600;
-}
-
-h1 {
-    text-align: center;
-}
-
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-}
-
-.hero-img {
-    background-image: url('../assets/sagar.jpg');
-    min-height: 100vh;
-}
-
-@media only screen and (max-width: 48em) { 
-    .hero-img {
-        background-image: url('../assets/sagar-none.jpg');
-    }
-}
-
-
-/***************************
-****************************
-Theme Styles
-****************************
-***************************/
-
-/*Color List:
-- light blue = 00AEEF;
-- dark blue = 1C75BC
-- green = 8DC63F
-- dark green = 009444
-- orange = F7941E
-- dark orange = F15A29
-- brown = 594a42; */
-
-.background-primary {
-    background: #A46C5B;
-    color: #fff;
-}
-
-.background-secondary {
-    background: #2C3B57;
-    color: #fff;
-}
-
-.background-tertiary {
-    background: #D29065;
-    color: #fff;
-}
-
-.background-quaternary {
-    background: #a56cc1;
-}
-
