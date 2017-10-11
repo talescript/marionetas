@@ -88,7 +88,7 @@ Layout Styles
 ****************************
 ***************************/
 .container {
-    max-width: 38em;
+    max-width: 30em;
     margin: 0 auto;
     padding: 1em;
 }
@@ -122,8 +122,6 @@ Module Styles
  * Background image / Paralax
  */
 
-
-
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -142,6 +140,30 @@ Module Styles
         background-image: url('../assets/sagar-none.jpg');
     }
 }
+
+/** 
+ * Flex Cards
+*/
+@media (min-width: 600px) {
+    .cardGroup {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.center-flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    flex-basis: 33%;
+    border: 1px solid #cad0d2;
+    border-radius: 4px;
+}
+
+
 
 
 /***************************
