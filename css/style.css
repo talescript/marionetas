@@ -121,6 +121,9 @@ Module Styles
 /**
  * Background image / Paralax
  */
+.uppercase {
+    text-transform: uppercase;
+}
 
 .parallax {
     background-attachment: fixed;
@@ -162,9 +165,6 @@ Module Styles
     border: 1px solid #cad0d2;
     border-radius: 4px;
 }
-
-
-
 
 /***************************
 ****************************
