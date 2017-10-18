@@ -132,8 +132,11 @@ Layout Styles
 ***************************/
 .grid-2, .grid-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 0.5em;
+}
+
+.grid-2 {
+    grid-template-rows: 15em 1fr;
 }
 
 .grid-3 {
@@ -190,6 +193,19 @@ Layout Styles
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.section-b-margin {
+    margin-bottom: 2em;
+}
+
+.column-2 {
+    column-count: 2;
+    column-gap: 2em;
+    column-width: 400px;
+    column-rule: medium inset #a0303d;
+    text-align: justify;
+    padding: 1em;
 }
 
 .flex-row {
