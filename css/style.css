@@ -138,6 +138,7 @@ Layout Styles
 
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
 }
 
 @media (max-width: 48em) {
@@ -147,29 +148,27 @@ Layout Styles
 }
 
 .card h3 {
-    text-transform: uppercase;
     text-align: center;
 }
 
-.card p {
-    font-size: 0.6em;
+@media (min-width: 48em) {
+    .card p {
+        font-size: 0.6em;
+    }
 }
 
 .product-image {
     background-image: url('../assets/puppet-stall.jpg');
 }
 
-@media (max-width: 48em) {
-    .product-image {
-        height: 80vw;
-    }
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-
 .text-center {
     text-align: center;
+}
+
+@media (max-width: 48em) {
+    .text-left-m {
+        text-align: left;
+    }
 }
 
 .inherit-height {
@@ -259,6 +258,15 @@ li  {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80%;
+}
+
+@media (max-width: 48em) {
+    .product-image {
+        height: 300px;
+    }
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 
 .overlay {
@@ -396,7 +404,7 @@ Theme Styles
 - brown = 594a42; */
 
 .background-primary {
-    background: #b6a37b;
+    background: #FAF9F8
 }
 
 .background-secondary {
@@ -417,9 +425,12 @@ Theme Styles
 /**
  * Font awesome icons
  */
-.fa-video-camera, .fa-pencil,
-.fa-television {
-    color: #a0303d;
+.fa {
+    color: #ED4B4D;
+}
+
+img {
+   height: 250px;
 }
 
 .button,
