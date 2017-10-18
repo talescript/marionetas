@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Marionetas Encantadas</title>
+</head>
+
+<body class=" container">
+    <header class="">
+        <h1>Marionetas Encantadas</h1>
+        <p>Somos un colectivo artístico, enfocados en crear mundos escénicos con diversas técnicas para re&#8208;crear, re&#8208;pensar
+            y aprender nuestro mundo.</p>
+        <form action="">
+            <label for="email"></label>
+            <input type="email" placeholder="email">
+            <button class="button button-primary">Submit</button>
+        </form>
+    </header>
+    <main>
+        <section class="">
+            <article>
+                <p>Y desde el Chi kung, incorporamos técnicas para descubrir nuevos motores de movimiento, enfocado a bailarines,
+                    marionetistas, titiriteros y actores en general.</p>
+            </article>
+        </section>
+        <section class="">
+            <h2>Proyectos</h2>
+            <article>
+                <h3>Abuela hilandera de historias</h3>
+
+                <h3>Suavecita la oruga y su capullito de seda</h3>
+                <p>Es la historia de una oruga llamada Suavecita que sueña con volar, y mientras sueña e interactua con otros
+                    personajes del bosque descubre en su escencia que haciendo su casa capullo puede desarrollar sus alas.</p>
+                <p>(Estética de marionetas de hilo y manipulación directa)</p>
+
+                <h3>La abuela Teje Mandalas y el atrapasueños</h3>
+                <p>Es la historia contada con teatro de sombras de como nació el atrapasueños, contado por la abuela hilandera
+                    pero desarrollado por la araña Teje Mandalas.</p>
+                <p>(Contado en Teatro de Sombras)</p>
+                
+                <h3>El uso y sus mil uso</h3>
+                <p>Es un cuento-mito sobre la creación del mundo y el uso mágico, en donde una pequeña descubre un universo
+                    de posibilidades.</p>
+                <p>(Marioneta de hilos, figuras bidimensionales)</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>AMPLIACIÓN SOBRE LOS CUENTOS Y SU POR QUE</h2>
+            <p>La abuela hilandera de historias, nace como un intento de volver a la tradición de las abuelas cuenta cuentos,
+                usando para ello las diferentes técnicas que nos permiten transportarnos a esos múndos, cada cuento cuenta
+                con su propia estética, brindando así la variedad tanto a nivel visual como interpretativo de los cuentos,
+                lo cual les permite ser mostrados en conjunto como en actos escenicos individuales. Para desarrollar este
+                proyecto se viene realizando una investigación sobre la cultura de las hilandera y tejedoras de telar, y
+                su idiosincracia, así como también en el caso del cuento de Suavecita la oruga, contamos con la asesoría
+                y enriquecimiento de varios conocedores del tema y así llevar aunque en el mundo de la fantasía la historia
+                de la mariposa autoctona de Córdoba Argentina, que también genera seda pero tiene sus características especiales
+                de diferencia con las mariposas Asiaticas como es el caso de su alimentación. Por otro lado los cuentos abarcan
+                un amplio espectro de edades permitiendo que toda la familia pueda compartirlos.</p>
+        </section>
+
+        <section>
+            <h2>Danza y Marionetas</h2>
+            <h3>Hilos</h3>
+            <p>Trabajo escenográfico y coreográfico que involucra a una bailarina y dos marionetas músicos en vivo, (música
+                experimental)
+            </p>
+            <h3>La abuela hilandera</h3>
+            <p>la abuela hilandera combinada con danza folklorica Nace del intento de contar desde otra estética estas historias
+                de vida, con el valor que pueden transmitir, especial para un rango de público más grande, puede estár articulado
+                con los otros cuentos o puede ser tomado como una puesta en escena individual.</p>
+        </section>
+
+        <section>
+            <h2>Taller de Chi Kung, motores de movimiento</h2>
+            <p>Taller experimental de Chi Kung y motores de movimiento La propuesta del taller es generar nuevas formas de movimiento
+                desde el Chi Kung creando conciencia en los artístas, de los gestos que pueden generar dolor corporal, y
+                desde esta disciplina tomar conciencia de nuevos motores de movimiento que enriquecen la acción escenica.Especial
+                para Marionetistas, Titiriteros, Bailarines y Actores en general</p>
+        </section>
+    </main>
+    <script>
+        // Change t to SCROLL on IOS
+        function iOS() {
+            var iDevices = [
+                // If the issue happen in other devices,
+                // add to list.
+                'iPhone Simulator',
+                'iPhone'
+            ];
+
+            var parallax = document.querySelector(".parallax");
+            if (!!navigator.platform) {
+                while (iDevices.length) {
+                    if (navigator.platform == iDevices.pop()) {
+                        parallax.style.t = "scroll";
+
+                    }
+                    console.log("I've only noticed the issue on iOS. Works on Android");
+                }
+            }
+        }
+
+        iOS();
+    </script>
+</body>
+
+</html>
+
