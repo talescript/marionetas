@@ -157,7 +157,14 @@ Layout Styles
 
 @media (min-width: 48em) {
     .card p {
-        font-size: 0.6em;
+        font-size: 0.9em;
+    }
+    .card p:first-of-type,
+    .card p:last-of-type {
+        font-size: 0.55em;
+    }
+    .card p:first-of-type {
+        text-align: center;
     }
 }
 
