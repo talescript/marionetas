@@ -180,14 +180,17 @@
                 <div class="feature-list">
                     <div class="text-center">
                         <i class="fa fa-sun-o fa-3x" aria-hidden="true"></i>
-                        <h4>Taller de Chi Kung</h4>
-                        <p style="font-size: 0.55rem">Motores de movimiento</p>
+                        <h4>Taller Experimental Chi Kung, Tai Chi, y sus 
+                            motores de movimiento
+                        </h4>
+                        <p style="font-size: 0.55rem">(Especial para titiriteros, marionetístas, 
+                            bailarines, actores y artistas en general)</p>
                     </div>
-                    <p class="card-font">Taller experimental de Chi Kung y motores de movimiento La propuesta del taller es generar nuevas formas
-                        de movimiento desde el Chi Kung creando conciencia en los artístas, de los gestos que pueden generar
-                        dolor corporal, y desde esta disciplina tomar conciencia de nuevos motores de movimiento que enriquecen
-                        la acción escenica.Especial para Marionetistas, Titiriteros, Bailarines y Actores en general
-                    </p>
+                    <p class="card-font">La propuesta del taller es, hacernos conscientes de 
+                        los movimientos o gestos corporales, que por un lado generan dolor 
+                        y por otro limitan nuevas expresiones escénicas, sugiriendo desde 
+                        las prácticas del Chi kung y el tai chi incorporar nuevos motores 
+                        de movimiento.</p>
                 </div>
             </div>
         </section>
@@ -272,8 +275,37 @@
                 }
             }
         }
-
         iOS();
+/*
+        let animate = function() {
+            // works if reloaded after scrolling the pos of the element
+            let elements = document.querySelectorAll(".feature-list");
+            let windowHeight = window.innerHeight;
+
+            elements.forEach(function(product){
+                let posFromTop = product.getBoundingClientRect().top;
+                if (posFromTop - windowHeight <= 0) {
+                    console.log(product.classList.add("animate"));
+                    product.animate([
+                        {opacity: '0'},
+                        { opacity: '1'},
+                    ], {
+                        duration: 1000,
+                    });
+                    product.animate([
+                        {transform: 'scale(0)'},
+                        {transform: 'scale(1)'}
+                    ], {
+                        duration: 800,
+                    });
+                    
+                }
+            });          
+        }
+
+        animate();
+        */
+        
     </script>
 </body>
 
