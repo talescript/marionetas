@@ -263,7 +263,8 @@ Module Styles
     #menu-toggle:checked + .nav-menu {
         display: block;
         animation-name: fadeIn;
-        animation-duration: 600ms;
+        animation-duration: 400ms;
+        animation-timing-function: ease-in-out;
         }
 } 
 
@@ -333,13 +334,11 @@ Module Styles
 @keyframes fadeIn {
     from {
         opacity: 0;
-        margin-left: 100%;
-        width: 300%;
+        transform: scale(0);
     }
     to {
         opacity: 1;
-        margin-left: 0;
-        width: 100%;
+        transform: scale(1);
     }
 }
 
