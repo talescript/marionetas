@@ -93,7 +93,7 @@ a:hover {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0.5em;
+    margin: 0.3em;
 }
 
 nav ul li a {
@@ -191,7 +191,7 @@ Layout Styles
 }
 
 .large-container {
-    max-width: 75em;
+    max-width: 45em;
     margin: 0 auto;
     padding: 0.3em;
 }
@@ -486,8 +486,22 @@ li {
 
 .footer-items {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-items h3 {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.footer-items li {
+    padding: 0.5em;
+}
+
+.footer-items li a {
+    color: #fff;
 }
 
 @media only screen and (max-width: 48em) { 
@@ -742,7 +756,6 @@ label > .label-body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
-  margin-bottom: 1rem;
   font-family: 'Roboto'; }
 input,
 textarea,
