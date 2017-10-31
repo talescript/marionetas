@@ -50,7 +50,9 @@
         <div class="overlay">
             <div class="container inherit-height">
                 <div class="flex-col flex-center inherit-height">
-                    <h1 class="title">Historias contadas desde el corazón<div class="period"></div> </h1>
+                    <h1 class="title">Historias contadas desde el corazón
+                        <div class="period"></div>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -63,7 +65,7 @@
                         <p class="text-center"> Somos un colectivo artístico, enfocados en crear mundos escénicos con diversas técnicas para re&#8208;crear,
                             re&#8208;pensar y aprender nuestro mundo.</p>
                         <a href="#form">
-                            <button class="button-callout">Contactanos</button>
+                            <button class="button-callout test-button">Contactanos</button>
                         </a>
                         <p class="text-center">Y desde el Chi kung, incorporamos técnicas para descubrir nuevos motores de movimiento, enfocado
                             a bailarines, marionetistas, titiriteros y actores en general.</p>
@@ -125,7 +127,9 @@
                     </div>
                     <div class="grid-3">
                         <div class="card">
-                            <img src="assets/one.jpg" alt="">
+                            <figure>
+                                <img src="assets/one.jpg" alt="">
+                            </figure>
                             <h3>Suavecita la oruga y su capullito de seda</h3>
                             <p>(Estética de marionetas de hilo y manipulación directa)</p>
                             <p>Es la historia de una oruguita de seda que sueña con volar, y mientras sueña, juega y se alimenta,
@@ -134,7 +138,9 @@
                             <p>Público; Todo público (3 años en adelante)</p>
                         </div>
                         <div class="card">
-                            <img src="assets/thanks.jpg" alt="">
+                            <figure>
+                                <img src="assets/sample.jpg" alt="">
+                            </figure>
                             <h3>Abuela Teje-Mandalas y el atrapasueños.</h3>
                             <p>(Estética de Teatro de Sombras)</p>
                             <p>Después de muchas pesadillas de Anita, su madre preocupada decide ir a buscar a la abuela Teje-Mandalas,
@@ -142,7 +148,9 @@
                             <p>Público; Todo público (3 años en adelante)</p>
                         </div>
                         <div class="card">
-                            <img src="assets/pair.jpg" alt="">
+                            <figure>
+                                <img src="assets/pair.jpg" alt="">
+                            </figure>
                             <h3>El uso y sus mil usos</h3>
                             <p>(Estética de marioneta de hilos, y figuras bidimensionales)</p>
                             <p>Es un cuento&dash;mito, sobre la creación del mundo y los seres que la habitan, todo es hilado
@@ -284,35 +292,6 @@
             }
         }
         iOS();
-/*
-        let animate = function() {
-            // works if reloaded after scrolling the pos of the element
-            let elements = document.querySelectorAll(".feature-list");
-            let windowHeight = window.innerHeight;
-
-            elements.forEach(function(product){
-                let posFromTop = product.getBoundingClientRect().top;
-                if (posFromTop - windowHeight <= 0) {
-                    console.log(product.classList.add("animate"));
-                    product.animate([
-                        {opacity: '0'},
-                        { opacity: '1'},
-                    ], {
-                        duration: 1000,
-                    });
-                    product.animate([
-                        {transform: 'scale(0)'},
-                        {transform: 'scale(1)'}
-                    ], {
-                        duration: 800,
-                    });
-                    
-                }
-            });          
-        }
-
-        animate();
-        */
 
     </script>
 </body>
