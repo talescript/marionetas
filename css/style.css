@@ -400,6 +400,79 @@ Module Styles
 }
 
 /**
+ * Modal
+ */
+ .modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    animation-name: fadeIn;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+}
+
+#marionetas .modal-content,
+#danza .modal-content {
+    max-width: 38em;
+    height: min-content;
+    margin: 4em auto;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    animation-name: slideInTop;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    #marionetas .modal-content,
+    #danza .modal-content {
+        
+        max-height: calc(100vh - 10px);
+        margin: 1em 0.5em;
+        border-radius: 5px;
+        padding: 1em;
+        overflow-y: auto;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.modal:target,
+#danza:target {
+    display: block;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-60vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/**
  * Heart animation
  */
 .heart {
@@ -529,13 +602,12 @@ Module Styles
     box-shadow: 2px 4px 8px #333;
 }
 
-.header-spacing {
-    padding-bottom: 1.75em;
+ul li {
+    list-style: none;
 }
 
-.box-inset {
-    box-shadow: inset 0 0 1px black;
-    border-radius: 5px;
+.header-spacing {
+    padding-bottom: 1.75em;
 }
 
 .card-font {
