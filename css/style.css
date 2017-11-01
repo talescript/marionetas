@@ -518,7 +518,7 @@ Module Styles
 
 @media only screen and (max-width: 48em) { 
     .feature-list {
-        margin: 0em;
+        margin: 1em 0;
         padding: 0.5em;
     }
 }
