@@ -198,6 +198,7 @@ figure:hover img {
 
 .product-image {
     background-image: url('../assets/puppet-stall.jpg');
+    height: 50vh;
 }
 
 .text-center {
@@ -227,7 +228,7 @@ figure:hover img {
 }
 
 .construction-container {
-    max-width: 45em;
+    max-width: 75em;
     margin: 0 auto;
 }
 
@@ -242,8 +243,12 @@ figure:hover img {
     flex-direction: column;
 }
 
-.section-b-margin {
-    margin-bottom: 2em;
+.section-t-margin {
+    margin-top: 2.5em;
+}
+
+.section-t-margin h2 {
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 48em) {
@@ -534,7 +539,9 @@ Module Styles
 }
 
 .card-font {
-    font-size: 0.85em;
+    max-width: 38em;
+    margin: 0 auto;
+    margin-top: 2em;
 }
 
 .half-width {
@@ -660,7 +667,7 @@ Theme Styles
 - brown = 594a42; */
 
 .background-primary {
-    background: #FAF9F8
+    background: #FAF9F8;
 }
 
 .background-secondary {
@@ -674,19 +681,38 @@ Theme Styles
 }
 
 .background-quaternary {
-    background: #a0303d;
-    color: #fff;
+    background: #912f56;
+    color: #f6f2f2;
+}
+
+.background-quintary {
+    background: #6B8874;
+    color: #2b2937;
 }
 
 /**
  * Font awesome icons
  */
 .fa {
-    color: #ED4B4D;
+    color: #da3e52;
 }
 
 .fa-bars {
     color: #333;
+}
+
+
+.footer-nav ul li a,
+.footer-items h3,
+.footer-items li .fa {
+    color: #68657d;
+}
+
+@media only screen and (min-width: 48em) { 
+    .footer-nav .cursive,
+    .footer-items li .fa {
+        font-size: 2em;
+    }
 }
 
 .button,
@@ -807,6 +833,10 @@ border-color: #4b485f; }
 
 .form {
     flex: 2 1 0;
+}
+
+section.form {
+    
 }
 
 .form-help {
