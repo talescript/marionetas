@@ -99,16 +99,17 @@ Layout Styles
 ****************************
 ***************************/
 
-/* nav {
+nav {
     display: none;
-} */ /****
+} /****
    *** TEMPORARY
    ***/
 
 .hero-bg header,
 #marionetas,
 #danza,
-#talleres {
+#talleres,
+#form {
     padding: 1em;
 }
 
@@ -125,41 +126,6 @@ Layout Styles
 }
 @media only screen and (min-width: 48em) {
         
-}
-
-/***************************
-****************************
-Theme Styles
-****************************
-***************************/
-
-.hero-bg {
-    background-color: #00BF6F;
-    color: #fff;
-    padding-bottom: 1.5em;
-    /* box-shadow: 0 0 4px 4px #333; */
-}
-
-.hero-bg p {
-    opacity: 0.8;
-    margin: 2em auto;
-    max-width: 91.4%;
-}
-
-
-/* #marionetas {
-    background-color: #4fcf99;
-    color: #fff;
-} */
-
-/* #danza {
-    background-color: #05467e;
-    color: #fff;
-} */
-
-#talleres {
-    background-color: #00BF6F;
-    color: #fff;
 }
 
 /***************************
@@ -230,24 +196,67 @@ Card Styles
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 1em;
+    background-color: #f7f8fa;
 }
 
-.first {
-    background-color: #ef5b88;
+#marionetas h2 {
+    color: #671e75;
 }
 
-.second {
-    background-color: #ef5b88;
-}
-
+.first,
+.second,
 .third {
-    background-color: #e90047;
+    background-color: #671e75;
+}
+
+#danza h2 {
+    color: #05467e;
 }
 
 .card-header.danza {
     padding: 2em 0.5em;
-    background-color: #1b6eb3;
+    background-color: #05467e;
 }
+
+/***************************
+****************************
+Theme Styles
+****************************
+***************************/
+
+.hero-bg {
+    background-color: #00BF6F;
+    color: #fff;
+    padding-bottom: 1.5em;
+    margin-bottom: 3em;
+    /* box-shadow: 0 0 4px 4px #333; */
+}
+
+.hero-bg p {
+    opacity: 0.8;
+    margin: 2em auto;
+    max-width: 91.4%;
+}
+
+#talleres {
+    color: #333e48;
+}
+
+
+/* #marionetas {
+    background-color: #4fcf99;
+    color: #fff;
+} */
+
+/* #danza {
+    background-color: #05467e;
+    color: #fff;
+} */
+
+/* #talleres {
+    background-color: #00BF6F;
+    color: #fff;
+} */
 
 /***************************
 ****************************
@@ -259,4 +268,70 @@ Tooltips and stuff Styles
 .tooltip {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/***************************
+****************************
+Form base Styles
+****************************
+***************************/
+#form {
+    margin: 0 0.8em;
+}
+#form h3 {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+input[type="submit"] {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    min-height: 55px;
+}
+/* 
+#message {
+    min-height: 100px;
+} */
+
+/***************************
+****************************
+Form Theme Styles
+****************************
+***************************/
+
+#form {
+    position: relative;
+    background-color: #00bf6d;
+    border-radius: 4px;
+    box-shadow: 0 0 40px -10px #000;
+}
+
+#form label {
+    color: #fff;
+}
+
+input, textarea {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #29c482;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #009756;
+    transition: all 0.5s ease-in;
 }

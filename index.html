@@ -34,7 +34,7 @@
         </nav>
 
         <header>
-            <h1>Historias contadas desde el corazón</h1>
+            <h1>Cuentos narrados desde el corazón</h1>
             <p> Somos un colectivo artístico, enfocados en crear mundos escénicos con diversas técnicas para re-crear, re-pensar
                 y aprender nuestro mundo.</p>
             <a href="#form" class="btn callout">Contáctanos</a>
@@ -139,15 +139,14 @@
             <h3>Contáctanos</h3>
             <form action="" class="form">
                 <label for="name">Nombre</label>
-                <input type="text">
+                <input type="text" id="name" autocomplete="on" required>
                 <label for="email">Correo</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" autocomplete="on" required>
                 <label for="message">Mensaje</label>
-                <textarea name="message" id="message"></textarea>
-                <button type="submit">
-                    Enviar
-                </button>
+                <textarea name="message" id="message" required></textarea>
+                <input class="btn callout" type="submit" value="Enviar">
             </form>
+            
         </section>
     </main>
 
