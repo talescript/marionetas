@@ -25,7 +25,7 @@ function openSlideMenu() {
         moveMain.style.marginLeft = '250px';
     });
 
-    var close = document.querySelector(".btn-close");
+    var close = document.querySelector(".side-nav");
     close.addEventListener("click", function () {
         openSlide.style.width = '0';
         moveHeader.style.marginLeft = '0';
