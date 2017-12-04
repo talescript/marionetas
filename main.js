@@ -13,7 +13,7 @@ function openSlideMenu() {
     // elements to be moved
     var openSlide = document.querySelector("#side-menu");
     var moveHeader = document.querySelector("header");
-    var moveMain = document.querySelector("main");
+    /* var moveMain = document.querySelector("main"); */
 
     open.addEventListener("click", function () {
         // make width of menu visible
@@ -22,14 +22,14 @@ function openSlideMenu() {
         // move header and body to give space to
         // menu
         moveHeader.style.marginLeft = '250px';
-        moveMain.style.marginLeft = '250px';
+      /*   moveMain.style.marginLeft = '250px'; */
     });
 
     var close = document.querySelector(".side-nav");
     close.addEventListener("click", function () {
         openSlide.style.width = '0';
         moveHeader.style.marginLeft = '0';
-        moveMain.style.marginLeft = '0';
+      /*   moveMain.style.marginLeft = '0'; */
     });
 }
 
