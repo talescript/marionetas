@@ -1,87 +1,106 @@
-/* SVG ICON */
-/* .open-slide a svg {
-    margin: 0.5em;
-} */
-.navbar {
-    background-color: #4fcf99;
-    height: 63px;
-}
+/* ADD code to min-width media query */
+@media only screen and (max-width: 48em) {
+    .page-wrap {
+        transition: all 200ms ease-in-out;
+    }
 
-/* .navbar ul li a,
-#side-menu a {
-    color: #007644;
-    text-decoration: none;
-} */
+    .offcanvas-expanded .page-wrap {
+        transform: translateX(250px);
+    }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
+    .offcanvas {
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: 5000;
+        transform: translateX(-250px);
+        transition: all 200ms ease-in-out;
+    }
 
-.navbar ul {
-    padding: 8px 0 0 0;
-    list-style: none;
-}
+    .offcanvas-expanded .offcanvas {
+        transform: translateX(0);
+    }
 
-.navbar a:hover {
-    background-color: #00bf6d;
-    color: #007644;
-}
-
-.side-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #0c6cb6;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: all 0.3s cubic-bezier(0.56, 0.67, 0.05, 0.81);
-}
-
-.side-nav a {
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #ccc;
-    display: block;
-    transition: all 0.3s cubic-bezier(0.56, 0.67, 0.05, 0.81);
-}
-
-.side-nav a:hover {
-    color: #fff;
-}
-.side-nav .btn-close {
-    position: absolute;
-    top: 0;
-    right: 22px;
-    font-size: 36px;
-    /* margin-left: 50px; */
-    transform: translateX(15px);
-}
-
-@media(max-width: 568px){
+    /***************************
+    ****************************
+    SVG Hamburguer Icon
+    ****************************
+    ***************************/
+    svg.offcanvas-toggle {
+        margin: 0.5em;
+    }
+    svg:hover {
+        cursor: pointer;
+    }
     .navbar-nav {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: inherit;
+        overflow-y: auto;
+    }
+
+    .navbar {
+        background-color: #0c6cb6;
+        height: 100%;
+        
+    }
+    
+    .navbar-nav li a {
+        color: #ccc;
+        
+    }
+    
+    .navbar-nav li {
+        margin: 1em auto;
+        padding-left: 0.5em;
+        padding-bottom: 0.4em;
+        border-bottom: 1px solid #05416f;
+        width: 100%;
+    }
+    
+    .navbar-nav li.active {
+        padding-left: 1em;
+        border-left: 3px solid white;
     }
 }
+/* ADD code to min-width media query */
 
-@media(min-width: 568px){
-    .open-slide {
+
+
+/***************************
+****************************
+Nav Layout
+****************************
+***************************/
+@media only screen and (min-width: 48em) {
+    svg.offcanvas-toggle {
         display: none;
     }
-}
-
-header {
-    /* transition: margin-left 0.5s; */
-    transition: all 0.3s cubic-bezier(0.56, 0.67, 0.05, 0.81);
-    width: 100%;
+    .navbar-nav {
+        display: flex;
+        justify-content: right;
+        padding: 0.5em 0;
+    }
+    .navbar-nav li {
+        margin-right: 2em;
+    }
+    .navbar-nav li.active {
+        border-bottom: 1px solid #007644;
+    }
+    
+    /***************************
+    ****************************
+    Nav Theme Styles
+    ****************************
+    ***************************/
+    .navbar {
+        background-color: #4fcf99;
+    }
+    
+    .navbar-nav li a {
+        color: #007644;
+    }
 }

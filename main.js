@@ -7,29 +7,15 @@ function init() {
 }
 
 function openSlideMenu() {
-    // open is used as the event listener
-    var open = document.querySelector(".openSlideMenu");
-
-    // elements to be moved
-    var openSlide = document.querySelector("#side-menu");
-    var moveHeader = document.querySelector("header");
-    /* var moveMain = document.querySelector("main"); */
-
-    open.addEventListener("click", function () {
-        // make width of menu visible
-        openSlide.style.width = '250px';
-
-        // move header and body to give space to
-        // menu
-        moveHeader.style.marginLeft = '250px';
-      /*   moveMain.style.marginLeft = '250px'; */
+    let offcanvas = document.querySelector(".offcanvas-toggle");
+    offcanvas.addEventListener("click", function(){
+        let body = document.querySelector("body");
+        body.classList.toggle("offcanvas-expanded");
     });
-
-    var close = document.querySelector(".side-nav");
-    close.addEventListener("click", function () {
-        openSlide.style.width = '0';
-        moveHeader.style.marginLeft = '0';
-      /*   moveMain.style.marginLeft = '0'; */
+    let navBar = document.querySelector(".navbar");
+    navBar.addEventListener("click", function(){
+        let body = document.querySelector("body");
+        body.classList.toggle("offcanvas-expanded");
     });
 }
 

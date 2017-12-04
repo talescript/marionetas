@@ -9,31 +9,13 @@
 </head>
 
 <body>
-    <div>
+    <div class="offcanvas">
         <nav class="navbar">
-            <span class="open-slide">
-                <a href="#" class="openSlideMenu">
-                    <svg width="30" height="30">
-                        <path d="M0,5 30, 5" stroke="#fff" stroke-width="5" />
-                        <path d="M0,14 30, 14" stroke="#fff" stroke-width="5" />
-                        <path d="M0,23 30, 23" stroke="#fff" stroke-width="5" />
-                    </svg>
-                </a>
-            </span>
             <ul class="navbar-nav">
                 <li>
                     <a href="index.html" title="">Marionetas Encantadas</a>
                 </li>
-                <li>
-                    <a href="index.html#marionetas" title="">Marionetas</a>
-                </li>
-                <li>
-                    <a href="index.html#danza" title="">Danza</a>
-                </li>
-                <li>
-                    <a href="index.html#talleres">Talleres</a>
-                </li>
-                <li>
+                <li class="active">
                     <a href="photos.html">Fotos</a>
                 </li>
                 <li>
@@ -41,14 +23,15 @@
                 </li>
             </ul>
         </nav>
-        <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close">&times;</a>
-            <a href="index.html" title="">Marionetas Encantadas</a>
-            <a href="index.html#marionetas">Marionetas</a>
-            <a href="index.html#danza">Danza</a>
-            <a href="index.html#talleres">Talleres</a>
-            <a href="photos.html">Fotos</a>
-            <a href="index.html#form">Contacto</a>
+    </div>
+
+    <div class="page-wrap">
+        <div class="hero-bg">
+            <svg width="30" height="30" class="offcanvas-toggle">
+                <path d="M0,5 30, 5" stroke="#000" stroke-width="5" />
+                <path d="M0,14 30, 14" stroke="#000" stroke-width="5" />
+                <path d="M0,23 30, 23" stroke="#000" stroke-width="5" />
+            </svg>
         </div>
 
         <main>
@@ -59,7 +42,7 @@
                 <figure>
                     <img src="assets/tinified/catcher.jpg" alt="">
                 </figure>
-                
+
                 <figure>
                     <img src="assets/tinified/sketch_1.jpg" alt="">
                 </figure>
@@ -82,33 +65,29 @@
         </main>
 
 
-    <footer>
-        <style>
-            footer {
-                margin: 0;
-            }    
-        </style>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html#marionetas" title="">Marionetas</a>
-                </li>
-                <li>
-                    <a href="index.html#danza" title="">Danza</a>
-                </li>
-                <li>
-                    <a href="index.html#talleres">Talleres</a>
-                </li>
-                <li>
-                    <a href="photos.html">Fotos</a>
-                </li>
-            </ul>
-        </nav>
-        <section class="foot-p">
-            <p>Creado por: <a href="https://www.talescript.com">Talescript</a></p>
-        </section>
-    </footer>
-
+        <footer>
+            <style>
+                footer {
+                    margin: 0;
+                }
+            </style>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" title="">Marionetas Encantadas</a>
+                    </li>
+                    <li>
+                        <a href="photos.html">Fotos</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="foot-p">
+                <p>Creado por:
+                    <a href="https://www.talescript.com">Talescript</a>
+                </p>
+            </section>
+        </footer>
+    </div>
     <script src="main.js"></script>
 </body>
 
