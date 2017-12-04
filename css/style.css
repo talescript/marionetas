@@ -345,4 +345,40 @@ Footer Styles
 ***************************/
 footer {
     margin-top: 4em;
+    background-color: #4fcf99;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer nav {
+    margin: 1em;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav ul a {
+    color: #f2f2f2;
+}
+
+.foot-p {
+    width: 100%;
+    text-align: center;
+    padding-right: 1em;
+    font-weight: lighter;
+    color: #009756;
+    font-family: cursive;
+}
+
+.foot-p a {
+    color: #007644;
 }
