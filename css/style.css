@@ -6,6 +6,7 @@ Reset Styles
 ***************************/
 @import 'normalize.css';
 @import 'nav.css';
+@import 'gallery.css';
 
 html {
     box-sizing: border-box;
@@ -122,7 +123,7 @@ Layout Styles
     .container {
         max-width: 48em;
         margin: 0 auto;
-        padding: 1em;
+        padding: 0.3em;
     }   
 }
 
@@ -401,43 +402,3 @@ footer nav ul a {
     color: #007644;
 }
 
-/***************************
-****************************
-Photo Styles
-****************************
-***************************/
-
-/* Create IMAGE GALLERY */
-/* DELETE ALL CODE BELOW */
-figure {
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0px 10px 6px -6px #141029;
-}
-
-figure img {
-    transition: all .400s ease-in-out;
-}
-
-figure:hover img {
-    transform: scale(1.2);
-    transition: all .800s ease-in-out;
-}
-
-.picture-bg {
-    background-color: #F8F8FF;
-}
-
-@media only screen and (min-width: 40em) {
-    img {
-        width: 350px;
-    }
-    .pictures {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        
-    }
-    figure {
-        box-shadow: 0px -10px 6px -6px #141029;
-    }
-}
