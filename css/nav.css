@@ -34,6 +34,7 @@
     svg:hover {
         cursor: pointer;
     }
+
     .navbar-nav {
         display: flex;
         flex-direction: column;
@@ -42,10 +43,13 @@
         overflow-y: auto;
     }
 
+    .navbar .container {
+        height: inherit;
+    }
+
     .navbar {
         background-color: #0c6cb6;
         height: 100%;
-        
     }
     
     .navbar-nav li a {
