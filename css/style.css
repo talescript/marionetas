@@ -118,19 +118,12 @@ Layout Styles
     padding: 1em;
 }
 
-.container {
-    max-width: 48em;
-    margin: 0 auto;
-    padding: 1em;
-}
-
-@media only screen and (max-width: 48em) {
-    .container {
-        padding: 0.5em;
-    }
-}
 @media only screen and (min-width: 48em) {
-        
+    .container {
+        max-width: 48em;
+        margin: 0 auto;
+        padding: 1em;
+    }   
 }
 
 /***************************
@@ -173,6 +166,17 @@ Card Styles
     /* transition: transform .5s ease-in; */
 }
 
+@media only screen and (min-width: 48em) {
+    .card {
+        max-width: 20em;
+    }
+    .card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
 /* .card:hover {
     transform: scale(1.05);
     transition: transform .5s ease-in;
@@ -181,6 +185,13 @@ Card Styles
 #marionetas .card:first-of-type,
 #danza .card:first-of-type {
     margin-top: 3em;
+}
+
+@media only screen and (min-width: 48em) {
+    #marionetas .card:first-of-type,
+    #danza .card:first-of-type {
+        margin-top: 0;
+    }
 }
 
 .card h3 {
@@ -199,11 +210,14 @@ Card Styles
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 1em;
-    background-color: #f7f8fa;
 }
 
 #marionetas h2 {
     color: #671e75;
+}
+
+.section-header-wrapper {
+    margin-bottom: 3em;
 }
 
 .first,
@@ -243,6 +257,10 @@ Theme Styles
 #talleres {
     color: #333e48;
     margin-bottom: 4em;
+}
+
+body {
+    background-color: #FFF8F0;
 }
 
 
