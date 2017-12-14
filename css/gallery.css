@@ -10,10 +10,16 @@ Photo Styles
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 figure {
     margin: 1em;
+}
+
+svg {
+    margin: 1em;
+    border-radius: 5px;
 }
 
 
