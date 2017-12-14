@@ -54,6 +54,8 @@
     
     .navbar-nav li a {
         color: #ccc;
+        display: inline-block;
+        width: 100%;
     }
     
     .navbar-nav li {
