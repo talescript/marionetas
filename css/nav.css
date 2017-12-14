@@ -5,7 +5,7 @@
     }
 
     .offcanvas-expanded .page-wrap {
-        transform: translateX(250px);
+        transform: translate3d(250px, 0, 0);
     }
 
     .offcanvas {
@@ -15,12 +15,12 @@
         top: 0;
         bottom: 0;
         z-index: 5000;
-        transform: translateX(-250px);
+        transform: translate3d(-250px, 0, 0);
         transition: all 200ms ease-in-out;
     }
 
     .offcanvas-expanded .offcanvas {
-        transform: translateX(0);
+        transform: translate3d(0, 0, 0);
     }
 
     /***************************

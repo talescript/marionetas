@@ -6,44 +6,20 @@ Photo Styles
 
 /* Create IMAGE GALLERY */
 /* DELETE ALL CODE BELOW */
-.pictures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.grid-gallery {
     
 }
 
-figure {
-    margin: 1em;
+.gallery-item {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(50, 50, 93, .8);
+}
+
+.gallery-title {
+    color: #0c6cb6;
 }
 
 svg {
-    margin: 1em;
-    border-radius: 5px;
+    max-width: 27em;
 }
-
-
-/* .pictures figure:nth-child(1){
-    flex-basis: 1;
-}
-
-.pictures figure:nth-child(2){
-    flex-basis: 2;
-}
-
-.pictures figure:nth-child(3){
-    flex-basis: 20em;
-}
-
-.pictures figure:nth-child(4){
-    flex-basis: 20em;
-}
-
-.pictures figure:nth-child(5){
-    flex-basis: 20em;
-}
-
-.pictures figure:nth-child(6){
-    flex-basis: 20em;
-} */
-

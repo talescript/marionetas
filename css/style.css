@@ -127,6 +127,13 @@ Layout Styles
     }   
 }
 
+/* Photo Gallery */
+@media only screen and (max-width: 47.999em){
+    .container .grid-gallery {
+        padding: 0.8em;
+    }
+}
+
 /***************************
 ****************************
 Button Styles
